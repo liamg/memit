@@ -10,7 +10,7 @@ Available as both a Go module and a binary.
 
 The `Command()` method takes an `io.Reader`, so you can use it with things like an HTTP response body, a `bytes.Buffer`, etc.
 
-It provides an `*exec.Cmd` (via `memit.Command(...)` so you can wire up stdin/out and configure other parameters just like you would with a regular command.
+It provides an `*exec.Cmd` (via `memit.Command(...)`) so you can wire up stdin/out and configure other parameters just like you would with a regular command.
 
 ```go
 package main

@@ -6,10 +6,6 @@ builds:
       - "-s -w"
     flags:
       - "--trimpath"
-    asmflags:
-      - all=-trimpath={{.Env.GOPATH}}
-    gcflags:
-      - all=-trimpath={{.Env.GOPATH}}
     env:
       - CGO_ENABLED=0
     goos:

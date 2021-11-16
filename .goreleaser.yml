@@ -1,0 +1,29 @@
+builds:
+  - id: memit
+    main: ./cmd/memit
+    binary: memit
+    ldflags:
+      - "-s -w"
+    flags:
+      - "--trimpath"
+    asmflags:
+      - all=-trimpath={{.Env.GOPATH}}
+    gcflags:
+      - all=-trimpath={{.Env.GOPATH}}
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+archives:
+  -
+    format: binary
+    name_template: "{{ .Binary}}-{{ .Os }}-{{ .Arch }}"
+release:
+  prerelease: auto
+  github:
+    owner: liamg
+    name: memit
+

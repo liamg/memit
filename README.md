@@ -32,7 +32,7 @@ func main() {
 
 ## Using the binary
 
-Grab the [latest release](https://liamg/memit/releases/latest) and run it like this:
+Grab the [latest release](https://github.com/liamg/memit/releases/latest) and run it like this:
 
 ```bash
 memit https://.../mybinary -- # args for the actual binary can be put after the --

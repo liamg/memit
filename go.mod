@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/spf13/cobra v1.2.1
-	golang.org/x/sys v0.0.0-20211116061358-0a5406a5449c
+	golang.org/x/sys v0.1.0
 )
 
 require (
